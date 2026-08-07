@@ -1,0 +1,373 @@
+/* ==========================================
+   DANNET Admin Panel
+========================================== */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+}
+
+.admin-login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#004aad,#00b4ff);
+}
+
+.login-box{
+    width:380px;
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.login-box img{
+    width:80px;
+    display:block;
+    margin:auto;
+}
+
+.login-box h2{
+    text-align:center;
+    margin:20px 0;
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-sizing:border-box;
+}
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#004aad;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#00337a;
+}
+
+
+.admin-layout{
+
+display:flex;
+
+min-height:100vh;
+
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+.sidebar{
+
+    width:260px;
+
+    background:#0b1f3a;
+
+    color:#fff;
+
+    padding:30px 20px;
+
+}
+
+.sidebar-logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.sidebar-logo img{
+
+    width:110px;
+
+    display:block;
+
+    margin:0 auto 15px;
+
+}
+
+.sidebar-logo h3{
+
+    color:#fff;
+
+    margin:0;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:30px 0 0;
+
+}
+
+.sidebar li{
+
+    margin-bottom:10px;
+
+}
+
+.sidebar li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.sidebar li a:hover{
+
+    background:#1d4ed8;
+
+}
+
+.sidebar li.active a{
+
+    background:#1d4ed8;
+
+}
+
+.sidebar li i{
+
+    width:20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+.content{
+
+flex:1;
+
+padding:40px;
+
+background:#f5f7fb;
+
+}
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:40px;
+
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.dashboard-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.dashboard-card h4{
+
+margin:0;
+
+color:#666;
+
+}
+
+.dashboard-card h2{
+
+margin-top:15px;
+
+font-size:34px;
+
+color:#004aad;
+
+}
+
+
+.table-tools{
+
+margin-bottom:20px;
+
+}
+
+.table-tools input{
+
+width:350px;
+
+padding:12px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+}
+
+.admin-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.admin-table th{
+
+background:#004aad;
+
+color:white;
+
+padding:15px;
+
+text-align:left;
+
+}
+
+.admin-table td{
+
+padding:14px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.admin-table tr:hover{
+
+background:#f7faff;
+
+}
+
+.admin-table button{
+
+padding:8px 14px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+margin-right:5px;
+
+background:#004aad;
+
+color:white;
+
+}
+
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-box{
+    background:#fff;
+    width:500px;
+    max-width:90%;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.modal-box button{
+    margin-top:15px;
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#004aad;
+    color:white;
+    border-radius:10px;
+}
+
+
+.modal-box input,
+.modal-box textarea,
+.modal-box select{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:6px;
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    box-sizing:border-box;
+
+}
+
+.modal-box textarea{
+
+    min-height:80px;
+
+    resize:vertical;
+
+}

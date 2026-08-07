@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Pasang Baru | DANNET</title>
+
+<link rel="stylesheet"
+href="../css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="container">
+
+<a href="../index.html" class="logo">
+
+<img src="../assets/logo.png">
+
+</a>
+
+<ul class="nav-menu">
+
+    <li><a href="../index.html">Beranda</a></li>
+
+    <li><a href="paket.html">Paket</a></li>
+
+    <li><a href="coverage.html">Coverage</a></li>
+
+    <li><a href="gangguan.html">Gangguan</a></li>
+
+    <li><a href="kontak.html">Kontak</a></li>
+
+</ul>
+
+<div class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+</div>
+
+</nav>
+
+<section class="page-header">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>DANNET</span>
+
+<h2>Form Pasang Baru</h2>
+
+<p>
+
+Silakan isi data berikut.
+
+Tim kami akan menghubungi Anda.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="form-section">
+
+<div class="container">
+
+<div class="form-box">
+
+<form id="formPasangBaru">
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label>Nomor WhatsApp</label>
+            <input type="tel" name="whatsapp" required>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label>Email (Opsional)</label>
+        <input type="email" name="email">
+    </div>
+
+    <div class="form-group">
+        <label>Alamat Lengkap</label>
+        <textarea name="alamat" required></textarea>
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Desa / Kelurahan</label>
+            <input type="text" name="desa">
+        </div>
+
+        <div class="form-group">
+            <label>Kecamatan</label>
+            <input type="text" name="kecamatan">
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label>Link Lokasi Google Maps</label>
+        <input
+            type="url"
+            name="maps"
+            placeholder="https://maps.google.com/...">
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group">
+
+            <label>Pilih Paket</label>
+
+            <select name="paket">
+
+                <option>20 Mbps</option>
+
+                <option>30 Mbps</option>
+
+                <option>50 Mbps</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Tanggal Pemasangan</label>
+
+            <input type="date" name="tanggal">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Catatan</label>
+
+        <textarea
+            name="catatan"
+            placeholder="Contoh: Rumah pagar hijau, dekat masjid..."></textarea>
+
+    </div>
+
+    <div class="form-group">
+
+        <label class="checkbox-label">
+
+            <input type="checkbox" required>
+
+            <span>
+            Saya menyetujui data ini digunakan untuk proses pemasangan.
+            </span>
+
+        </label>
+
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+
+        Kirim Permohonan
+
+    </button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-bottom">
+
+© 2026 DANNET DATA SOLUSION
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/pasang-baru.js"></script>
+
+</body>
+
+</html>
