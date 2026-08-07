@@ -1797,6 +1797,14 @@ PAGE HEADER
 
 }
 
+.page-logo {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+
 
 /*======================================
 PAGE CONTENT
