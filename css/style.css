@@ -1599,6 +1599,57 @@ transform:translateY(0);
 }
 
 
+/* ======================================
+   FOOTER MOBILE - COMPACT
+====================================== */
+
+@media (max-width:768px){
+
+    .footer{
+        margin-top:60px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+        padding:35px 0 25px;
+        text-align:center;
+    }
+
+    .footer-logo{
+        width:150px;
+        margin:0 auto 15px;
+    }
+
+    .footer p{
+        font-size:15px;
+        line-height:1.6;
+        margin-bottom:8px;
+    }
+
+    .footer h3{
+        font-size:20px;
+        margin-bottom:10px;
+    }
+
+    .footer li{
+        margin-bottom:5px;
+    }
+
+    .footer a{
+        font-size:16px;
+        margin-bottom:5px;
+    }
+
+    .footer-bottom{
+        padding:15px 10px;
+        font-size:13px;
+        line-height:1.5;
+    }
+
+}
+
+
 /*======================================
 FLOATING WHATSAPP
 ======================================*/
