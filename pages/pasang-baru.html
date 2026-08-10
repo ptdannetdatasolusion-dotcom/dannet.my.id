@@ -82,111 +82,257 @@ Tim kami akan menghubungi Anda.
 
 <div class="form-box">
 
-<form id="formPasangBaru">
+<!-- ============================================
+     DANNET ISP SYSTEM
+     FORM PASANG BARU
+============================================ -->
+
+<form id="pasangBaruForm">
+
+    <!-- ========================================
+         DATA PELANGGAN
+    ========================================= -->
 
     <div class="form-row">
 
         <div class="form-group">
-            <label>Nama Lengkap</label>
-            <input type="text" name="nama" required>
+
+            <label for="nama">
+                Nama Lengkap
+            </label>
+
+            <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama lengkap"
+                autocomplete="name"
+                required>
+
         </div>
+
 
         <div class="form-group">
-            <label>Nomor WhatsApp</label>
-            <input type="tel" name="whatsapp" required>
+
+            <label for="whatsapp">
+                Nomor WhatsApp
+            </label>
+
+            <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="08xxxxxxxxxx"
+                autocomplete="tel"
+                required>
+
         </div>
 
     </div>
 
-    <div class="form-group">
-        <label>Email (Opsional)</label>
-        <input type="email" name="email">
-    </div>
+
+    <!-- ========================================
+         EMAIL
+    ========================================= -->
 
     <div class="form-group">
-        <label>Alamat Lengkap</label>
-        <textarea name="alamat" required></textarea>
+
+        <label for="email">
+            Email
+            <span class="optional">
+                (Opsional)
+            </span>
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh@email.com"
+            autocomplete="email">
+
     </div>
+
+
+    <!-- ========================================
+         ALAMAT
+    ========================================= -->
+
+    <div class="form-group">
+
+        <label for="alamat">
+            Alamat Lengkap
+        </label>
+
+        <textarea
+            id="alamat"
+            name="alamat"
+            rows="4"
+            placeholder="Masukkan alamat lengkap rumah"
+            required></textarea>
+
+    </div>
+
+
+    <!-- ========================================
+         WILAYAH
+    ========================================= -->
 
     <div class="form-row">
 
         <div class="form-group">
-            <label>Desa / Kelurahan</label>
-            <input type="text" name="desa">
+
+            <label for="desa">
+                Desa / Kelurahan
+            </label>
+
+            <input
+                type="text"
+                id="desa"
+                name="desa"
+                placeholder="Desa / Kelurahan">
+
         </div>
 
+
         <div class="form-group">
-            <label>Kecamatan</label>
-            <input type="text" name="kecamatan">
+
+            <label for="kecamatan">
+                Kecamatan
+            </label>
+
+            <input
+                type="text"
+                id="kecamatan"
+                name="kecamatan"
+                placeholder="Kecamatan">
+
         </div>
 
     </div>
 
+
+    <!-- ========================================
+         GOOGLE MAPS
+    ========================================= -->
+
     <div class="form-group">
-        <label>Link Lokasi Google Maps</label>
+
+        <label for="maps">
+            Link Lokasi Google Maps
+        </label>
+
         <input
             type="url"
+            id="maps"
             name="maps"
             placeholder="https://maps.google.com/...">
+
+        <small class="form-help">
+            Silakan masukkan link lokasi rumah dari Google Maps.
+        </small>
+
     </div>
+
+
+    <!-- ========================================
+         PAKET DAN TANGGAL
+    ========================================= -->
 
     <div class="form-row">
 
         <div class="form-group">
 
-            <label>Pilih Paket</label>
+            <label for="paket">
+                Pilih Paket Internet
+            </label>
 
-            <select name="paket">
+            <select
+                id="paket"
+                name="paket"
+                required>
 
-                <option>20 Mbps</option>
-
-                <option>30 Mbps</option>
-
-                <option>50 Mbps</option>
+                <option value="">
+                    Memuat paket internet...
+                </option>
 
             </select>
 
         </div>
 
+
         <div class="form-group">
 
-            <label>Tanggal Pemasangan</label>
+            <label for="tanggal">
+                Tanggal Pemasangan
+            </label>
 
-            <input type="date" name="tanggal">
+            <input
+                type="date"
+                id="tanggal"
+                name="tanggal">
 
         </div>
 
     </div>
 
+
+    <!-- ========================================
+         CATATAN
+    ========================================= -->
+
     <div class="form-group">
 
-        <label>Catatan</label>
+        <label for="catatan">
+            Catatan
+        </label>
 
         <textarea
+            id="catatan"
             name="catatan"
+            rows="4"
             placeholder="Contoh: Rumah pagar hijau, dekat masjid..."></textarea>
 
     </div>
+
+
+    <!-- ========================================
+         PERSETUJUAN
+    ========================================= -->
 
     <div class="form-group">
 
         <label class="checkbox-label">
 
-            <input type="checkbox" required>
+            <input
+                type="checkbox"
+                id="persetujuan"
+                name="persetujuan"
+                required>
 
             <span>
-            Saya menyetujui data ini digunakan untuk proses pemasangan.
+                Saya menyetujui data ini digunakan
+                untuk proses pemasangan layanan DANNET.
             </span>
 
         </label>
 
     </div>
 
-    <button class="btn btn-primary" type="submit">
+
+    <!-- ========================================
+         SUBMIT
+    ========================================= -->
+
+    <button
+        type="submit"
+        class="btn btn-primary"
+        id="btnSubmitPasangBaru">
 
         Kirim Permohonan
 
     </button>
+
 
 </form>
 
@@ -212,11 +358,10 @@ Tim kami akan menghubungi Anda.
 
 </footer>
 
-<script src="../js/main.js"></script>
 <script src="../js/config.js"></script>
 <script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
 <script src="../js/pasang-baru.js"></script>
-
 </body>
 
 </html>
