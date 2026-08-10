@@ -1600,51 +1600,68 @@ transform:translateY(0);
 
 
 /* ======================================
-   FOOTER MOBILE - COMPACT
+   FOOTER MOBILE - STYLE PC
 ====================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    .footer{
-        margin-top:60px;
+    .footer {
+        margin-top: 50px;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
-        gap:25px;
-        padding:35px 0 25px;
-        text-align:center;
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+        gap: 12px;
+        padding: 35px 0 25px;
+        text-align: left;
+        align-items: start;
     }
 
-    .footer-logo{
-        width:150px;
-        margin:0 auto 15px;
+    /* LOGO + DESKRIPSI */
+    .footer-grid > div:first-child {
+        text-align: left;
     }
 
-    .footer p{
-        font-size:15px;
-        line-height:1.6;
-        margin-bottom:8px;
+    .footer-logo {
+        width: 105px;
+        height: auto;
+        margin: 0 0 12px 0;
     }
 
-    .footer h3{
-        font-size:20px;
-        margin-bottom:10px;
+    .footer p {
+        font-size: 10px;
+        line-height: 1.6;
+        margin-bottom: 5px;
     }
 
-    .footer li{
-        margin-bottom:5px;
+    /* JUDUL FOOTER */
+    .footer h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+        white-space: nowrap;
     }
 
-    .footer a{
-        font-size:16px;
-        margin-bottom:5px;
+    /* MENU */
+    .footer li {
+        margin-bottom: 5px;
     }
 
-    .footer-bottom{
-        padding:15px 10px;
-        font-size:13px;
-        line-height:1.5;
+    .footer a {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 5px;
+        word-break: break-word;
+    }
+
+    /* KONTAK */
+    .footer-grid > div:nth-child(3) a {
+        font-size: 10px;
+    }
+
+    /* SOCIAL */
+    .footer-grid > div:nth-child(4) a {
+        font-size: 11px;
     }
 
 }
