@@ -46,9 +46,12 @@ const API = {
    UPDATE PELANGGAN
 ====================================== */
 
-async function updatePelanggan(data){
+async function updatePelanggan(data) {
 
-    return postAPI("updatePelanggan", data);
+    return API.post(
+        "updatePelanggan",
+        data
+    );
 
 }
 
@@ -56,10 +59,13 @@ async function updatePelanggan(data){
    HAPUS PELANGGAN
 ====================================== */
 
-async function deletePelanggan(id){
+async function deletePelanggan(id) {
 
-    return postAPI("deletePelanggan", {
-        id:id
-    });
+    return API.post(
+        "deletePelanggan",
+        {
+            id: id
+        }
+    );
 
 }
